@@ -1,7 +1,6 @@
 # 🌟 My Portfolio
 
 Welcome to my personal portfolio! 🚀 This is where I showcase my projects, skills, and experiences.
-![Home Page](https://github.com/GGupta03/Portfolio/blob/main/Home.png?raw=true)
 
 ## 📌 Features  
 - Responsive and modern design  
