@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body, html {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80vh;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .profile-pic {
+            position: relative;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-pic img {
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(67, 225, 243, 0.7), 0 0 20px rgba(67, 225, 243, 0.7), 0 0 30px rgba(67, 225, 243, 0.7), 0 0 40px rgba(67, 225, 243, 0.7);
+            width: 350px;
+            height: 350px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .profile-pic img:hover {
+            box-shadow: 0 0 20px rgba(67, 225, 243, 0.9), 0 0 30px rgba(67, 225, 243, 0.9), 0 0 40px rgba(67, 225, 243, 0.9), 0 0 50px rgba(67, 225, 243, 0.9);
+        }
+        .about-content {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+        }
+        .about-content h1 {
+            font-size: 45px;
+            margin: 0;
+        }
+        .about-content .glow {
+            font-size: 45px;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(67, 225, 243, 0.7),
+                         0 0 10px rgba(67, 225, 243, 0.7),
+                         0 0 20px rgba(67, 225, 243, 0.7),
+                         0 0 30px rgba(67, 225, 243, 0.7),
+                         0 0 40px rgba(67, 225, 243, 0.7),
+                         0 0 50px rgba(67, 225, 243, 0.7);
+        }
+        .about-content p {
+            font-size: 20px;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-pic, .about-content {
+                width: 100%;
+                text-align: center;
+            }
+            .about-content h1, .about-content p {
+                text-align: center;
+            }
+            .about-content {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic">
+            <img src="pic.jpg" alt="Profile Picture"> <!-- Replace with your profile picture -->
+        </div>
+        <div class="about-content">
+            <h1>About <span class="glow">Me</span></h1>
+            <p>Hello! I'm Gaurav Gupta, a passionate tech enthusiast currently pursuing my B.Tech degree at SRM Institute of Science and Technology. With a strong focus on developing my coding skills, I'm dedicated to creating innovative solutions and enhancing my technical expertise. I enjoy participating in hackathons and am always eager to take on new challenges. Welcome to my portfolio, where you can learn more about my projects and accomplishments.</p>
+        </div>
+    </div>
+</body>
+</html>
